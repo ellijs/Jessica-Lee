@@ -9,19 +9,19 @@ export default function Profile() {
                 <div className='profile=details'>
                     <div className='colz'>
                         <div className='colz-icon'>
-                            <a href="#">
+                            <a href="https://www.facebook.com/jessica.lee.77128">
                                 <i className='fa fa-facebook-square'></i>
                             </a>
-                            <a href="#">
+                            <a href="https://www.linkedin.com/in/jessica-jisun-lee/">
                                 <i className='fa fa-linkedin'></i>
                             </a>
-                            <a href="#">
+                            <a href="https://twitter.com/ellijs0623">
                                 <i className='fa fa-twitter'></i>
                             </a>
-                            <a href="#">
+                           <a href='https://github.com/ellijs'>
                                 <i className='fa fa-github'></i>
                             </a>
-                            <a href="#">
+                            <a href="https://ellijs0623.medium.com/">
                                 <i className='fa fa-medium'></i>
                             </a>
                         </div>
@@ -38,16 +38,14 @@ export default function Profile() {
                             {" "}
                             <h1>
                               <Typical loop={Infinity} steps={[
-                                    'Ethusiastic Dev 💻', 
+                                    'Ethusiastic SWE 💻', 
                                     1500, 
-                                    'Full Stack Developer 🥰', 
+                                    'Full Stack Developer 👩🏻‍💻', 
                                     1500, 
-                                    'Passionate ', 
+                                    'Passionate Worker! ❤️‍🔥 ', 
                                     1500, 
-                                    'React Deveoper', 
-                                    1500, 
-                                    'Ethusiastic Dev', 
-                                    1500
+                                    // 'React Developer 📱', 
+                                    // 1500
                               ]}
                               />
                             </h1>

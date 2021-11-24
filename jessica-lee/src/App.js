@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Profile from './PortfolioContainer/Home/Profile.js'
+import Home from './PortfolioContainer/Home/Home'
 
 
 function App() {
   return (
     <div className="App">
-      <Profile />
+      <Home />
     </div>
   );
 }
