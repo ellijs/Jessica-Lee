@@ -45,8 +45,6 @@ export default function Profile() {
                                     1500, 
                                     'Passionate Worker! ❤️‍🔥 ', 
                                     1500, 
-                                    // 'React Developer 📱', 
-                                    // 1500
                               ]}
                               />
                             </h1>
