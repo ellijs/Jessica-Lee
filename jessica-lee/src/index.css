@@ -1,17 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,800;1,600;1,700&display=swap');
 
-* {
-  font-family: "Poppins";
-}
-
-
-/* @font-face {
+@font-face {
   font-family: "Poppins Medium";
   font-style: normal;
   font-weight: normal;
-  src: url("'https://fonts.googleapis.com/css2?family=Poppins:500;0&display=swap'");
-}  */
-/* 
+  src: url("./assets/fonts/Poppins-Medium.ttf");
+}
+
 @font-face {
   font-family: "Poppins Regular";
   font-style: normal;
@@ -24,9 +18,9 @@
   font-style: normal;
   font-weight: normal;
   src: url("./assets/fonts/Poppins-SemiBold.ttf");
-} */
+}
 
-/* @font-face {
+@font-face {
   font-family: "Poppins Bold";
   font-style: normal;
   font-weight: normal;
@@ -38,9 +32,9 @@
   font-style: normal;
   font-weight: normal;
   src: url("./assets/fonts/Poppins-ExtraBold.ttf");
-} */
+}
 
-/* @font-face {
+@font-face {
   font-family: "Poppins Light";
   font-style: normal;
   font-weight: normal;
@@ -51,8 +45,8 @@
   font-family: "Poppins Thin";
   font-style: normal;
   font-weight: normal;
-  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-} */ */ */
+  src: url("./assets/fonts/Poppins-Thin.ttf");
+}
 
 * {
   outline: none;
@@ -61,8 +55,7 @@
 body {
   margin: 0;
   overflow-y: overlay;
-  font-family: "Poppins";
-  font-weight: 400;
+  font-family: "Poppins Regular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -95,8 +88,7 @@ body ::-webkit-scrollbar-thumb {
   width: 160px;
   cursor: pointer;
   transition: 0.2s;
-  font-family: "Poppins";
-  font-weight: 600;
+  font-family: "Poppins SemiBold";
 }
 
 .btn:active {
@@ -117,7 +109,7 @@ body ::-webkit-scrollbar-thumb {
 
 .primary-btn:hover {
   color: aliceblue;
-  border: 2px solid #ff5823;
+  border: 2px solid var(--pink);
   background-color: #1f2235;
 }
 
@@ -125,7 +117,7 @@ body ::-webkit-scrollbar-thumb {
   color: var(--white);
 
   font-size: 12px;
-  background-color: #ff34ee;
+  background-color:var(--pink);
 }
 @media only screen and (max-width: 568px) {
   .highlighted-btn {
@@ -142,4 +134,5 @@ body ::-webkit-scrollbar-thumb {
   transform: translateY(80px);
   transition: all 0.8s ease;
 }
+
 

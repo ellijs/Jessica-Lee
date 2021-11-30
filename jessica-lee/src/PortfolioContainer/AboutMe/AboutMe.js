@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import ScreenHeading from '../../Utilities/ScreenHeading/ScreenHeading'
 import ScrollService from '../../Utilities/ScrollService';
 import Animations from '../../Utilities/Animations'
+import "./AboutMe.css";
 
 function AboutMe(props) {
     let fadeInScreenHandler = (screen) => {
@@ -27,14 +28,13 @@ function AboutMe(props) {
 
         const renderHighlight = () => {
             return (
-                SCREEN_CONSTANTS.highlights.bullets.map((value, i) => {
-                    return(
-                    <div className = 'highlight' key={i}>
-                        <div className = 'hightlight-blob'>
+                SCREEN_CONSTANTS.highlights.bullets.map((value, i) => (
+                    <div className ='highlight' key={i}>
+                        <div className ='highlight-blob'>
                         </div>
                         <span>{value}</span>
                     </div>
-                )})
+                ))
             )
         }
 
@@ -54,7 +54,7 @@ function AboutMe(props) {
                             {renderHighlight()}
                         </div>
                         <div className='about-me-options'>
-                            <button className='btn      primary-btn'>
+                            <button className='btn      primary-btn' onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
                                 {""}
                                 Hire Me{" "}
                             </button>
