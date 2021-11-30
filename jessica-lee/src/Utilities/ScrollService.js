@@ -3,7 +3,7 @@ import { Subject } from "rxjs";
 import { object } from "prop-types"
 
 export default class ScrollService {
-  static scrollHandler = newScrollService();
+  static scrollHandler = new ScrollService();
 
   static currentScreenBroadCaster = new Subject();
   static currentScreenFadeIn = new Subject();
