@@ -33,7 +33,7 @@
     background-color:#1F2235;
 }
 
-. seperator-blob {
+.seperator-blob {
     height: 10px;
     width: 100%;
     position: absolute;
@@ -44,5 +44,5 @@
 .seperator-blob div {
     width: 35px;
     border-radius: 10px;
-    background-color: var(--dark-orange);
+    background-color: var(--pink);
 }
