@@ -52,6 +52,33 @@ function Resume(props) {
     { skill: "Git", ratingPercentage: 85 },
   ]
 
+  const projectDetails = [
+    { 
+      title: "InstantGifts",
+      duration: {fromDate: '2021', toDate: '2021'},
+      description : "Personal project. Creating whole website using React (front-end) and setting database by using Ruby on Rails (back-end), deployed through Heroku.",
+      subHeading: "Sending gifts to loved ones through email or phone number"
+    },
+    { 
+      title: "Pookeepers",
+      duration: {fromDate: '2021', toDate: '2021'},
+      description : "Developed website using React(front-end) and tailwind CSS, setting up back-end database using Ruby and SQLite3, creating routes by using Sinatra.",
+      subHeading: "Creating website for zookeepers who can manage animal-care logs"
+    },
+    { 
+      title: "Flatironeats",
+      duration: {fromDate: '2021', toDate: '2021'},
+      description : "Making webapp using React, increasing visuality using CSS and Semantic-ui, creating data using db.json and integrating front-end and the database.",
+      subHeading: "Food shopping and delivery app for hungry coders"
+    },
+    { 
+      title: "Blog-app",
+      duration: {fromDate: '2021', toDate: '2021'},
+      description : "Creating blog web-app by using React (front-end) and Ruby on rails (back-end), also User authentication that allows to manage user's CRUD.",
+      subHeading: "Writing your own blog and watching others! "
+    }
+  ]
+
   // implement fadeEffect and Smooth scroll
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeScreen !== props.id) return;
