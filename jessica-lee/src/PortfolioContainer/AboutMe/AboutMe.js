@@ -9,7 +9,7 @@ function AboutMe(props) {
         if(screen.fadeScreen !== props.id) return;
         Animations.animations.fadeInScreen(props.id)
     }
-    const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler)
+    const fadeInSubscription = () => ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler)
 
         const SCREEN_CONSTANTS = {
             description: "Full stack developer. Highly organized, fast learner and problem solver, embarking on software engineering career after 10 years in business management.",
@@ -54,7 +54,7 @@ function AboutMe(props) {
                             {renderHighlight()}
                         </div>
                         <div className='about-me-options'>
-                            <button className='btn      primary-btn' onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
+                            <button className='btn primary-btn' onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
                                 {""}
                                 Hire Me{" "}
                             </button>

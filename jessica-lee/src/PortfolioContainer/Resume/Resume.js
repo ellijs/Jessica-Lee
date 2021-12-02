@@ -13,11 +13,12 @@ function Resume(props) {
     if (screen.fadeScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
-  const fadeInSubscription =
+  const fadeInSubscription = () =>
     ScrollService.currentScreenFadeIn.subscrie(fadeInScreenHandler);
 
   const ResumeHeading = (props) => {
-    <div className='resume-heading'>
+    return(
+      <div className='resume-heading'>
       <div className='resume-main-heading'>
         <div className='heading-bullet'>
           <span>{props.heading ? props.heading : ""}</span>
@@ -36,7 +37,8 @@ function Resume(props) {
           <span>{props.description ? props.description : ""}</span>
         </div>
       </div>
-    </div>;
+    </div>
+    )
   };
 
   const resumeBullets = [
@@ -215,7 +217,7 @@ function Resume(props) {
     setSelectedBulletIndex(index)
   };
 
-  const getBullets = () => {
+  const getBullets = (index) => {
     return resumeBullets.map((bullet, inde) => (
       <div 
       onClick={()=>handleCarousal(index)}
@@ -231,10 +233,30 @@ function Resume(props) {
     ))
   }
 
+  const getResumeScreen = () => {
+    return (
+      <div
+      style={carousalOffSetStyle.style}
+      className='resume-details-carousal'
+      >
+      {resumeDetails.map((ResumeDetail)=> ResumeDetail)}
+      </div>
+    )
+  }
+
   return (
     <div className='resume-container screen-container' id={props.id || ""}>
       <div className='resume-content'>
         <ScreenHeading title={"Resume"} subHeading={"My Formal Bio Details"} />
+        <div className='resume-card'>
+          <div className='resume-bullets'>
+            <div className='bullet-container'>
+              <div className='bullet-icons'></div>
+              <div className='bullets'>{getBullets()}</div>
+            </div>
+          </div>
+          <div className='resume-bullet-details'>{getResumeScreen()}</div>
+        </div>
       </div>
     </div>
   );
