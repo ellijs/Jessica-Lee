@@ -39,6 +39,19 @@ function Resume(props) {
     { label: "Interests", logoSrc: "interests.svg"}
   ];
 
+  const programmingSkillDetails = [
+    { skill: "Javascript", ratingPercentage: 90 },
+    { skill: "React JS", ratingPercentage: 90 },
+    { skill: "Ruby", ratingPercentage: 90 },
+    { skill: "Python", ratingPercentage: 75 },
+    { skill: "Node JS", ratingPercentage: 80 },
+    { skill: "HTML", ratingPercentage: 90 },
+    { skill: "CSS", ratingPercentage: 85 },
+    { skill: "SQL", ratingPercentage: 85 },
+    { skill: "Ruby on Rails", ratingPercentage: 90 },
+    { skill: "Git", ratingPercentage: 85 },
+  ]
+
   // implement fadeEffect and Smooth scroll
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeScreen !== props.id) return;
