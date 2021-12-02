@@ -77,6 +77,119 @@ function Resume(props) {
       description : "Creating blog web-app by using React (front-end) and Ruby on rails (back-end), also User authentication that allows to manage user's CRUD.",
       subHeading: "Writing your own blog and watching others! "
     }
+  ];
+
+  const resumeDetails = [
+    <div className='resume-screen-container' key='education'>
+       <ResumeHeading 
+          heading={"Flatiron School"}
+          subHeading={"Certification of Full-stack software Engineer"}
+          fromDate={"2021"}
+          toDate={"2021"}
+          />,
+      <ResumeHeading 
+          heading={"Sogang University, Korea"}
+          subHeading={"Major in Communications, double majored in English Literatures"}
+          fromDate={""}
+          toDate={""}
+          />
+    </div>,
+    <div className='resume-screen-container' key='work-experience'>
+       <ResumeHeading 
+          heading={"Paris Bagutte"}
+          subHeading={"General manager"}
+          fromDate={"12/2016"}
+          toDate={"11/2019"}
+          />
+          <div className='experience-description'>
+            <span className='resume-description-text'>
+              General Manager
+            </span>
+          </div>
+
+          <div className='experience-description'>
+            <span className='resume-description-text'>
+              - Managed business, orginized crews
+            </span>
+            <br/>
+            <span className='resume-description-text'>
+              - Analyzed sales, marketing store
+            </span>
+            <br/>
+            <span className='resume-description-text'>
+              - Opened business, made it successful
+            </span>
+          </div>
+
+          <ResumeHeading 
+          heading={"New SAANY corp."}
+          subHeading={"Assistant/General manager"}
+          fromDate={"07/2008"}
+          toDate={"12/2016"}
+          />
+          <div className='experience-description'>
+            <span className='resume-description-text'>
+              Assistant/General Manager
+            </span>
+          </div>
+
+          <div className='experience-description'>
+            <span className='resume-description-text'>
+              - Assisted owner chef, ran business
+            </span>
+            <br/>
+            <span className='resume-description-text'>
+              - Managed business, increased sales
+            </span>
+            <br/>
+            <span className='resume-description-text'>
+              - Suggested marketing solutions
+            </span>
+          </div>,
+
+          <div className='resume-screen-container programming-skills-container' key='programming skills'>
+            {programmingSkillDetails.map((skill, index)=>(
+              <div className='skill-parent' key={index}>
+                <div className='heading-bullet'></div>
+                <span>{skill.skill}</span>
+                <div className='skill-percentage'>
+                  <div className='active-percentage' style={{width: skill.ratingPercentage + "%"}}>
+                    
+                    </div> 
+                  </div>
+              </div>
+            ))}
+          </div>,
+
+          <div className='resume=screen-container' key='projects'>
+            {projectDetails.map((projectDetails, index)=> (
+              <ResumeHeading
+              key={index}
+              heading={projectDetails.title}
+              subHeading={projectDetails.subHeading}
+              description={projectDetails.description}
+              fromDate={projectDetails.duration.fromDate}
+              toDate={projectDetails.duration.toDate}
+              />
+            ))}
+          </div>,
+
+          <div className='resume=screen-container' key='interests'>
+            <ResumeHeading
+              heading="Pilates"
+              description="Learn body balancing, stretching and perserverance"
+            />
+             <ResumeHeading
+              heading="Traveling"
+              description="Adventurous, Looking forward to meeting new people, cultures and delicious foods"
+            />
+             <ResumeHeading
+              heading="Hiking"
+              description="Feeling accomplished refreshed, great for leg workout, breathing in fresh air and positive energy "
+            />
+          </div>
+    </div>
+
   ]
 
   // implement fadeEffect and Smooth scroll
