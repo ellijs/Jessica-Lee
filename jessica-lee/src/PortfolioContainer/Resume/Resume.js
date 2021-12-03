@@ -21,25 +21,24 @@ function Resume(props) {
   const ResumeHeading = (props) => {
     return(
       <div className='resume-heading'>
-      <div className='resume-main-heading'>
-        <div className='heading-bullet'>
+        <div className='resume-main-heading'>
+          <div className='heading-bullet'></div>
           <span>{props.heading ? props.heading : ""}</span>
-          {props.fromDate && props.toDate ? (
-            <div className='heading-date'>
-              {props.fromDate + "_" + props.toDate}
-            </div>
-          ) : (
-            <div></div>
-          )}
+            {props.fromDate && props.toDate ? (
+              <div className='heading-date'>
+                {props.fromDate + " - " + props.toDate}
+              </div>
+            ) : (
+              <div></div>
+            )}
+          </div>
+          <div className='resume-sub-heading'>
+            <span>{props.subHeading ? props.subHeading : ""}</span>
+          </div>
+          <div className='resume-heading-description'>
+            <span>{props.description ? props.description : ""}</span>
+          </div>
         </div>
-        <div className='resume-sub-heading'>
-          <span>{props.subHeading ? props.subHeading : ""}</span>
-        </div>
-        <div className='resume-heading-description'>
-          <span>{props.description ? props.description : ""}</span>
-        </div>
-      </div>
-    </div>
     )
   };
 
@@ -88,13 +87,13 @@ function Resume(props) {
         "Making webapp using React, increasing visuality using CSS and Semantic-ui, creating data using db.json and integrating front-end and the database.",
       subHeading: "Food shopping and delivery app for hungry coders",
     },
-    {
-      title: "Blog-app",
-      duration: { fromDate: "2021", toDate: "2021" },
-      description:
-        "Creating blog web-app by using React (front-end) and Ruby on rails (back-end), also User authentication that allows to manage user's CRUD.",
-      subHeading: "Writing your own blog and watching others! ",
-    },
+    // {
+    //   title: "Blog-app",
+    //   duration: { fromDate: "2021", toDate: "2021" },
+    //   description:
+    //     "Creating blog web-app by using React (front-end) and Ruby on rails (back-end), also User authentication that allows to manage user's CRUD.",
+    //   subHeading: "Writing your own blog and watching others! ",
+    // },
   ];
 
   const resumeDetails = [
@@ -105,7 +104,6 @@ function Resume(props) {
         fromDate={"2021"}
         toDate={"2021"}
       />
-      ,
       <ResumeHeading
         heading={"Sogang University, Korea"}
         subHeading={
@@ -116,60 +114,74 @@ function Resume(props) {
       />
     </div>,
 
-    // Work Experience
+  
     <div className='resume-screen-container' key='work-experience'>
-      <ResumeHeading
-        heading={"Paris Bagutte"}
-        subHeading={"General manager"}
-        fromDate={"12/2016"}
-        toDate={"11/2019"}
-      />,
-      <div className='experience-description'>
-        <span className='resume-description-text'>General Manager</span>
-      </div>
-      <div className='experience-description'>
-        <span className='resume-description-text'>
-          - Managed business, orginized crews
-        </span>
-        <br />
-        <span className='resume-description-text'>
-          - Analyzed sales, marketing store
-        </span>
-        <br />
-        <span className='resume-description-text'>
-          - Opened business, made it successful
-        </span>
-      </div>
-      <ResumeHeading
-        heading={"New SAANY corp."}
-        subHeading={"Assistant/General manager"}
-        fromDate={"07/2008"}
-        toDate={"12/2016"}
-      />
-      <div className='experience-description'>
-        <span className='resume-description-text'>
-          Assistant/General Manager
-        </span>
-      </div>
-      <div className='experience-description'>
-        <span className='resume-description-text'>
-          - Assisted owner chef, ran business
-        </span>
-        <br />
-        <span className='resume-description-text'>
-          - Managed business, increased sales
-        </span>
-        <br />
-        <span className='resume-description-text'>
-          - Suggested marketing solutions
-        </span>
+      <div className='experience-container'>
+
+          <ResumeHeading
+            heading={"Paris Bagutte"}
+            subHeading={"General manager"}
+            fromDate={"12/16"}
+            toDate={"11/19"}
+          />
+    
+          <div className='experience-description'>
+            {/* <span className='resume-description-text'>
+              General Manager
+            </span> */}
+          </div>
+    
+          <div className='experience-description'>
+            <span className='resume-description-text'>
+              - Managed business, orginized crews
+            </span>
+            <br />
+            <span className='resume-description-text'>
+              - Analyzed sales, marketing store
+            </span>
+            <br />
+            <span className='resume-description-text'>
+              - Opened business, made it successful
+            </span>
+          </div>
+
+          <div className='space'></div>
+    
+          <ResumeHeading
+            heading={"New SAANY corp."}
+            subHeading={"Assistant/General manager"}
+            fromDate={"07/08"}
+            toDate={"12/16"}
+          />
+    
+          <div className='experience-description'>
+            {/* <span className='resume-description-text'>
+              Assistant/General Manager
+            </span> */}
+          </div>
+    
+          <div className='experience-description'>
+            <span className='resume-description-text'>
+              - Assisted owner chef, ran business
+            </span>
+            <br />
+            <span className='resume-description-text'>
+              - Managed business, increased sales
+            </span>
+            <br />
+            <span className='resume-description-text'>
+              - Suggested marketing solutions
+            </span>
+            <br/>
+          </div>
+
+        </div>
       </div>
       ,
 
-      {/* programming skills */}
-      <div
-        className='resume-screen-container programming-skills-container'
-        key='programming skills'
+    
+      <div 
+        className='resume-screen-container programming-skills-container' key='programming skills'
       >
         {programmingSkillDetails.map((skill, index) => (
           <div className='skill-parent' key={index}>
@@ -186,8 +198,8 @@ function Resume(props) {
       </div>
       ,
 
-      {/* projects */}
-      <div className='resume=screen-container' key='projects'>
+    
+      <div className='resume-screen-container' key='projects'>
         {projectDetails.map((projectDetails, index) => (
           <ResumeHeading
             key={index}
@@ -201,22 +213,21 @@ function Resume(props) {
       </div>
       ,
 
-      {/* Interests */}
-      <div className='resume=screen-container' key='interests'>
+     
+      <div className='resume-screen-container' key='interests'>
         <ResumeHeading
           heading='Pilates'
-          description='Learn body balancing, stretching and perserverance'
+          description='Learn body balancing, patience and perserverance.'
         />
         <ResumeHeading
           heading='Traveling'
-          description='Adventurous, Looking forward to meeting new people, cultures and delicious foods'
+          description='Adventurous, Looking forward to meeting new people, cultures and delicious foods.'
         />
         <ResumeHeading
           heading='Hiking'
-          description='Feeling accomplished refreshed, great for leg workout, breathing in fresh air and positive energy '
+          description='Feeling accomplished at the peak, getting rid of stress, feeling refreshed while sweating.'
         />
       </div>
-    </div>,
   ];
 
   const handleCarousal = (index) => {
