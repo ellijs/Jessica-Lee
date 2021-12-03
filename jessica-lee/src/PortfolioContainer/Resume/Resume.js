@@ -16,6 +16,8 @@ function Resume(props) {
   const fadeInSubscription = () =>
     ScrollService.currentScreenFadeIn.subscrie(fadeInScreenHandler);
 
+
+  // Reusable minor components
   const ResumeHeading = (props) => {
     return(
       <div className='resume-heading'>
@@ -41,6 +43,7 @@ function Resume(props) {
     )
   };
 
+  // Static Resume data for the labels
   const resumeBullets = [
     { label: "Education", logoSrc: "education.svg" },
     { label: "Work History", logoSrc: "work-history.svg" },
@@ -112,13 +115,15 @@ function Resume(props) {
         toDate={""}
       />
     </div>,
+
+    // Work Experience
     <div className='resume-screen-container' key='work-experience'>
       <ResumeHeading
         heading={"Paris Bagutte"}
         subHeading={"General manager"}
         fromDate={"12/2016"}
         toDate={"11/2019"}
-      />
+      />,
       <div className='experience-description'>
         <span className='resume-description-text'>General Manager</span>
       </div>
@@ -160,6 +165,8 @@ function Resume(props) {
         </span>
       </div>
       ,
+
+      {/* programming skills */}
       <div
         className='resume-screen-container programming-skills-container'
         key='programming skills'
@@ -170,7 +177,7 @@ function Resume(props) {
             <span>{skill.skill}</span>
             <div className='skill-percentage'>
               <div
-                className='active-percentage'
+                className='active-percentage-bar'
                 style={{ width: skill.ratingPercentage + "%" }}
               ></div>
             </div>
@@ -178,6 +185,8 @@ function Resume(props) {
         ))}
       </div>
       ,
+
+      {/* projects */}
       <div className='resume=screen-container' key='projects'>
         {projectDetails.map((projectDetails, index) => (
           <ResumeHeading
@@ -191,6 +200,8 @@ function Resume(props) {
         ))}
       </div>
       ,
+
+      {/* Interests */}
       <div className='resume=screen-container' key='interests'>
         <ResumeHeading
           heading='Pilates'
@@ -210,28 +221,32 @@ function Resume(props) {
 
   const handleCarousal = (index) => {
     let offsetHeight = 360;
+
     let newCarousalOffset = {
-      style: { transform: 'translateY(" + index * offsetHeight * -1 + "px)' },
+      style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
     };
     setCarousalOffSetStyle(newCarousalOffset);
     setSelectedBulletIndex(index)
   };
 
-  const getBullets = (index) => {
+  const getBullets = () => {
     return resumeBullets.map((bullet, index) => (
-      <div 
-      onClick={()=>handleCarousal(index)}
-      className={index === selectedBulletIndex ? 'bullet selected-bullet' : 'bullet'}
-      key={index}
+      <div
+        onClick={() => handleCarousal(index)}
+        className={
+          index === selectedBulletIndex ? "bullet selected-bullet" : "bullet"
+        }
+        key={index}
       >
-        <img className='bullet-logo' 
-        src={require (`../../assets/Resume/${bullet.logoSrc}`)}
-        alt='Oops...No Internet Connection'
+        <img
+          className="bullet-logo"
+          src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
+          alt="Oops...No Internet connection"
         />
-
+        <span className="bullet-label">{bullet.label}</span>
       </div>
-    ))
-  }
+    ));
+  };
 
   const getResumeScreen = () => {
     return (
