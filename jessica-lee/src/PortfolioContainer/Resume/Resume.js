@@ -96,6 +96,8 @@ function Resume(props) {
     // },
   ];
 
+
+  // Rendering Project Details - Array
   const resumeDetails = [
     <div className='resume-screen-container' key='education'>
       <ResumeHeading
