@@ -218,7 +218,7 @@ function Resume(props) {
   };
 
   const getBullets = (index) => {
-    return resumeBullets.map((bullet, inde) => (
+    return resumeBullets.map((bullet, index) => (
       <div 
       onClick={()=>handleCarousal(index)}
       className={index === selectedBulletIndex ? 'bullet selected-bullet' : 'bullet'}
