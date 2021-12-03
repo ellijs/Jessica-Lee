@@ -62,7 +62,7 @@ function Testimonial(props) {
                   </div>
                 </div>
               </div>
-              
+
               <div className='col-lg-12'>
                 <div className='testi-item'>
                   <div className='testi-comment'>
@@ -92,9 +92,9 @@ function Testimonial(props) {
                     </ul>
                   </div>
                   <div className='client-info'>
-                      <img src='img/Testimonial/lady.png' alt='no internet connection'></img>
-                      <h5>Daisy Dominic</h5>
-                      <p>CEO FininceGlobal</p>
+                      <img src='img/Testimonial/man.png' alt='no internet connection'></img>
+                      <h5>Gary Lee</h5>
+                      <p>CEO New SAANY Corp</p>
                   </div>
                 </div>
               </div>
