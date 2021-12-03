@@ -26,17 +26,118 @@ function Testimonial(props) {
         <div className='container'>
           <div className='row'>
             <OwlCarousel className='owl-carousel' id='testimonial-carousel'>
+
               <div className='col-lg-12'>
                 <div className='testi-item'>
                   <div className='testi-comment'>
                     <p>
+                        <i className='fa fa-quote-left'/>
                       I patronized Jessica and when He delivered, I honestly
                       fell in love with the project. She is a very honest guy
                       and she delivers ontime.
+                      <i className='fa fa-quote-right'></i>
                     </p>
+                    <ul>
+                        <li className='stars list-unstyled'>
+                            <i className='fa fa-star'></i>
+                        </li>
+                        <li className='stars list-unstyled'>
+                            <i className='fa fa-star'></i>
+                        </li>
+                        <li className='stars list-unstyled'>
+                            <i className='fa fa-star'></i>
+                        </li>
+                        <li className='stars list-unstyled'>
+                            <i className='fa fa-star-half-alt'></i>
+                        </li>
+                        <li className='stars list-unstyled'>
+                            <i className='fa fa-star'></i>
+                        </li>
+                    </ul>
+                  </div>
+                  <div className='client-info'>
+                      <img src='img/Testimonial/lady.png' alt='no internet connection'></img>
+                      <h5>Daisy Dominic</h5>
+                      <p>CEO FininceGlobal</p>
                   </div>
                 </div>
               </div>
+              
+              <div className='col-lg-12'>
+                <div className='testi-item'>
+                  <div className='testi-comment'>
+                    <p>
+                        <i className='fa fa-quote-left'/>
+                      I patronized Jessica and when He delivered, I honestly
+                      fell in love with the project. She is a very honest guy
+                      and she delivers ontime.
+                      <i className='fa fa-quote-right'></i>
+                    </p>
+                    <ul>
+                        <li className='stars list-unstyled'>
+                            <i className='fa fa-star'></i>
+                        </li>
+                        <li className='stars list-unstyled'>
+                            <i className='fa fa-star'></i>
+                        </li>
+                        <li className='stars list-unstyled'>
+                            <i className='fa fa-star'></i>
+                        </li>
+                        <li className='stars list-unstyled'>
+                            <i className='fa fa-star-half-alt'></i>
+                        </li>
+                        <li className='stars list-unstyled'>
+                            <i className='fa fa-star'></i>
+                        </li>
+                    </ul>
+                  </div>
+                  <div className='client-info'>
+                      <img src='img/Testimonial/lady.png' alt='no internet connection'></img>
+                      <h5>Daisy Dominic</h5>
+                      <p>CEO FininceGlobal</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className='col-lg-12'>
+                <div className='testi-item'>
+                  <div className='testi-comment'>
+                    <p>
+                        <i className='fa fa-quote-left'/>
+                      I patronized Jessica and when He delivered, I honestly
+                      fell in love with the project. She is a very honest guy
+                      and she delivers ontime.
+                      <i className='fa fa-quote-right'></i>
+                    </p>
+                    <ul>
+                        <li className='stars list-unstyled'>
+                            <i className='fa fa-star'></i>
+                        </li>
+                        <li className='stars list-unstyled'>
+                            <i className='fa fa-star'></i>
+                        </li>
+                        <li className='stars list-unstyled'>
+                            <i className='fa fa-star'></i>
+                        </li>
+                        <li className='stars list-unstyled'>
+                            <i className='fa fa-star-half-alt'></i>
+                        </li>
+                        <li className='stars list-unstyled'>
+                            <i className='fa fa-star'></i>
+                        </li>
+                    </ul>
+                  </div>
+                  <div className='client-info'>
+                      <img src='img/Testimonial/lady.png' alt='no internet connection'></img>
+                      <h5>Daisy Dominic</h5>
+                      <p>CEO FininceGlobal</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+
             </OwlCarousel>
           </div>
         </div>
