@@ -7,7 +7,8 @@ import ScreenHeading from "../../Utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../Utilities/ScrollService";
 import Animations from "../../Utilities/Animations";
 
-// npm i react-owl-carousal
+// npm i react-owl-carousel
+
 function Testimonial(props) {
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeScreen !== props.id) return;
@@ -15,6 +16,28 @@ function Testimonial(props) {
   };
   const fadeInSubscription = () =>
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
+    const options = {
+      loop: true,
+      margin: 0,
+      nav: true,
+      animateIn: 'bounceInRight',
+      animateOut: 'bounceOutRight',
+      dots: true,
+      autoplay: true,
+      smartSpeed: 1000,
+      responsive: { 
+        0: { 
+          items: 1,
+        },
+        768: { 
+          items: 1,
+        },
+        1000: { 
+          items: 3,
+        },
+      }
+    }
 
   return (
     <div>
@@ -134,9 +157,6 @@ function Testimonial(props) {
                   </div>
                 </div>
               </div>
-
-
-
 
             </OwlCarousel>
           </div>
