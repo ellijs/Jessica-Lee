@@ -17,6 +17,7 @@ function Testimonial(props) {
   const fadeInSubscription = () =>
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
+    // Adding Own-carousel Animation moving from right to left in 1 sec. {...options}
     const options = {
       loop: true,
       margin: 0,
@@ -48,7 +49,7 @@ function Testimonial(props) {
       <section className='testimonial-section' id={props.id || ""}>
         <div className='container'>
           <div className='row'>
-            <OwlCarousel className='owl-carousel' id='testimonial-carousel'>
+            <OwlCarousel className='owl-carousel' id='testimonial-carousel' {...options} >
 
               <div className='col-lg-12'>
                 <div className='testi-item'>
