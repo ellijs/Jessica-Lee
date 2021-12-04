@@ -152,7 +152,7 @@ function Testimonial(props) {
                     </ul>
                   </div>
                   <div className='client-info'>
-                      <img src='img/Testimonial/lady.png' alt='no internet connection'></img>
+                      <img src='img/Testimonial/daisy.png' alt='no internet connection'></img>
                       <h5>Daisy Dominic</h5>
                       <p>CEO FininceGlobal</p>
                   </div>
