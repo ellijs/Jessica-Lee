@@ -6,6 +6,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import ScreenHeading from "../../Utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../Utilities/ScrollService";
 import Animations from "../../Utilities/Animations";
+import './Testimonial.css';
 
 // npm i react-owl-carousel
 
