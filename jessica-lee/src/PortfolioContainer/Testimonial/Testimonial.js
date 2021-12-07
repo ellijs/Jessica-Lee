@@ -62,20 +62,21 @@ function Testimonial(props) {
                       and she delivers ontime.
                       <i className='fa fa-quote-right'></i>
                     </p>
-                    <ul>
-                        <li className='stars list-unstyled'>
+                    <ul className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
-                            <i className='fa fa-star-half-alt'></i>
+                        <li>
+                            {/* <i className='fa fa-star-half-alt'></i> */}
+                              <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
                     </ul>
@@ -98,20 +99,20 @@ function Testimonial(props) {
                       and she delivers ontime.
                       <i className='fa fa-quote-right'></i>
                     </p>
-                    <ul>
-                        <li className='stars list-unstyled'>
+                    <ul className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
-                            <i className='fa fa-star-half-alt'></i>
+                        <li>
+                            <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
                     </ul>
@@ -134,21 +135,21 @@ function Testimonial(props) {
                       and she delivers ontime.
                       <i className='fa fa-quote-right'></i>
                     </p>
-                    <ul>
-                        <li className='stars list-unstyled'>
+                    <ul className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
-                            <i className='fa fa-star-half-alt'></i>
-                        </li>
-                        <li className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
+                        </li>
+                        <li>
+                             <i className='fa fa-star'></i>
                         </li>
                     </ul>
                   </div>
@@ -171,21 +172,21 @@ function Testimonial(props) {
                       and she delivers ontime.
                       <i className='fa fa-quote-right'></i>
                     </p>
-                    <ul>
-                        <li className='stars list-unstyled'>
+                    <ul className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
-                            <i className='fa fa-star-half-alt'></i>
-                        </li>
-                        <li className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
+                        </li>
+                        <li>
+                          <i className='fa fa-star-half-alt'></i>
                         </li>
                     </ul>
                   </div>
@@ -208,20 +209,20 @@ function Testimonial(props) {
                       and she delivers ontime.
                       <i className='fa fa-quote-right'></i>
                     </p>
-                    <ul>
-                        <li className='stars list-unstyled'>
+                    <ul className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
-                            <i className='fa fa-star-half-alt'></i>
+                        <li>
+                            <i className='fa fa-star'></i>
                         </li>
-                        <li className='stars list-unstyled'>
+                        <li>
                             <i className='fa fa-star'></i>
                         </li>
                     </ul>
