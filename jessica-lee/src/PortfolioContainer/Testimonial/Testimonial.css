@@ -48,3 +48,13 @@
     font-style: italic;
 }
 
+.testimonial-section .testi-item p .fa-quote-left {
+    margin-right: 5px;
+    color: var(--pink);
+}
+
+.testimonial-section .testi-item p .fa-quote-right {
+    margin-left: 5px;
+    color: var(--pink);
+    
+}
