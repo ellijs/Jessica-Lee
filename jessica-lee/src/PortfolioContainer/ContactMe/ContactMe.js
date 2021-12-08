@@ -73,7 +73,13 @@ function ContactMe(props) {
                         <label htmlFor='email'>Email</label>
                         <input type='text'></input>
                         <label htmlFor='message'>Message</label>
-                        <input type='text'></input>
+                        <textarea type='text'></textarea>
+
+                        <div className='send-btn'>
+                            <button type='submit'>
+                                send<i className='fa fa-paper-plane'></i>
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
