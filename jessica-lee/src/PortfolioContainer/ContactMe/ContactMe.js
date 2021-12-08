@@ -9,6 +9,7 @@ import ScreenHeading from '../../Utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../Utilities/ScrollService';
 import Animations from '../../Utilities/Animations';
 import './ContactMe.css';
+import Footer from '../Footer/Footer';
 
 
 
@@ -124,7 +125,8 @@ function ContactMe(props) {
                         </div>
                     </form>
                 </div>
-            </div>           
+            </div>  
+            <Footer />         
         </div>
     );
 }
