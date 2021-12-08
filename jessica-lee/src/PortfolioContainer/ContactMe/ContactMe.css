@@ -2,7 +2,7 @@
     min-height: 100vh;
 }
 
-.centtral-form {
+.central-form {
     max-width: 1100px;
     padding: 10px;
     display: flex;
@@ -11,4 +11,5 @@
     flex-direction: column;
     justify-content: center;
     background-color: #1f2235;
+    box-shadow: 0 0px 20px -2px #1f2235;
 }
