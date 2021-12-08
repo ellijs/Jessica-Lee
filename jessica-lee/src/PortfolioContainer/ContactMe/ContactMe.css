@@ -86,3 +86,12 @@ form label {
     border-radius: 10px;
   }
 
+  textarea:focus {
+    border: 2px solid rgba(30, 85, 250, 0.47);
+    background-color: #fff;
+  }
+  form input:focus {
+    border: 2px solid rgba(30, 85, 250, 0.47);
+    background-color: #fff;
+  }
+
