@@ -115,6 +115,11 @@ function ContactMe(props) {
                         <div className='send-btn'>
                             <button type='submit'>
                                 send<i className='fa fa-paper-plane'></i>
+                                { bool ? (
+                                <b className='load'>
+                                    <img src={load1} alt='image not responding'></img>
+                                </b>) : ("")
+                                }
                             </button>
                         </div>
                     </form>
