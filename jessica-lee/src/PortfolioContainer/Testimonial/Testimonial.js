@@ -6,7 +6,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import ScreenHeading from "../../Utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../Utilities/ScrollService";
 import Animations from "../../Utilities/Animations";
-import './Testimonial.css';
+import "./Testimonial.css";
 
 // npm i react-owl-carousel
 
@@ -18,28 +18,28 @@ function Testimonial(props) {
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
-    // Adding Own-carousel Animation moving from right to left in 1 sec. {...options}
-    const options = {
-      loop: true,
-      margin: 0,
-      nav: true,
-      animateIn: 'bounceInRight',
-      animateOut: 'bounceOutRight',
-      dots: true,
-      autoplay: true,
-      smartSpeed: 1000,
-      responsive: { 
-        0: { 
-          items: 1,
-        },
-        768: { 
-          items: 1,
-        },
-        1000: { 
-          items: 3,
-        },
-      }
-    }
+  // Adding Own-carousel Animation moving from right to left in 1 sec. {...options}
+  const options = {
+    loop: true,
+    margin: 0,
+    nav: true,
+    animateIn: "bounceInRight",
+    animateOut: "bounceOutRight",
+    dots: true,
+    autoplay: true,
+    smartSpeed: 1000,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 1,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  };
 
   return (
     <div>
@@ -50,41 +50,46 @@ function Testimonial(props) {
       <section className='testimonial-section fade-in' id={props.id || ""}>
         <div className='container'>
           <div className='row'>
-            <OwlCarousel className='owl-carousel' id='testimonial-carousel' {...options} >
-
+            <OwlCarousel
+              className='owl-carousel'
+              id='testimonial-carousel'
+              {...options}
+            >
               <div className='col-lg-12'>
                 <div className='testi-item'>
                   <div className='testi-comment'>
                     <p>
-                        <i className='fa fa-quote-left'/>
-                      I patronized Jessica and when He delivered, I honestly
-                      fell in love with the project. She is a very honest guy
-                      and she delivers ontime.
+                      <i className='fa fa-quote-left' />I patronized Jessica and
+                      when He delivered, I honestly fell in love with the
+                      project. She is a very honest guy and she delivers ontime.
                       <i className='fa fa-quote-right'></i>
                     </p>
                     <ul className='stars list-unstyled'>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            {/* <i className='fa fa-star-half-alt'></i> */}
-                              <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        {/* <i className='fa fa-star-half-alt'></i> */}
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
                     </ul>
                   </div>
                   <div className='client-info'>
-                      <img src='img/Testimonial/lady.png' alt='no internet connection'></img>
-                      <h5>Daisy Dominic</h5>
-                      <p>CEO FininceGlobal</p>
+                    <img
+                      src='img/Testimonial/lady.png'
+                      alt='no internet connection'
+                    ></img>
+                    <h5>Daisy Dominic</h5>
+                    <p>CEO FininceGlobal</p>
                   </div>
                 </div>
               </div>
@@ -93,34 +98,36 @@ function Testimonial(props) {
                 <div className='testi-item'>
                   <div className='testi-comment'>
                     <p>
-                        <i className='fa fa-quote-left'/>
-                      I patronized Jessica and when He delivered, I honestly
-                      fell in love with the project. She is a very honest guy
-                      and she delivers ontime.
+                      <i className='fa fa-quote-left' />I patronized Jessica and
+                      when He delivered, I honestly fell in love with the
+                      project. She is a very honest guy and she delivers ontime.
                       <i className='fa fa-quote-right'></i>
                     </p>
                     <ul className='stars list-unstyled'>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
                     </ul>
                   </div>
                   <div className='client-info'>
-                      <img src='img/Testimonial/man.png' alt='no internet connection'></img>
-                      <h5>Gary Lee</h5>
-                      <p>CEO New SAANY Corp</p>
+                    <img
+                      src='img/Testimonial/man.png'
+                      alt='no internet connection'
+                    ></img>
+                    <h5>Gary Lee</h5>
+                    <p>CEO New SAANY Corp</p>
                   </div>
                 </div>
               </div>
@@ -129,112 +136,115 @@ function Testimonial(props) {
                 <div className='testi-item'>
                   <div className='testi-comment'>
                     <p>
-                        <i className='fa fa-quote-left'/>
-                      I patronized Jessica and when He delivered, I honestly
-                      fell in love with the project. She is a very honest guy
-                      and she delivers ontime.
+                      <i className='fa fa-quote-left' />I patronized Jessica and
+                      when He delivered, I honestly fell in love with the
+                      project. She is a very honest guy and she delivers ontime.
                       <i className='fa fa-quote-right'></i>
                     </p>
                     <ul className='stars list-unstyled'>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                             <i className='fa fa-star'></i>
-                        </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
                     </ul>
                   </div>
                   <div className='client-info'>
-                      <img src='img/Testimonial/daisy.jpg' alt='no internet connection'></img>
-                      <h5>Daisy Dominic</h5>
-                      <p>CEO FininceGlobal</p>
+                    <img
+                      src='img/Testimonial/daisy.jpg'
+                      alt='no internet connection'
+                    ></img>
+                    <h5>Daisy Dominic</h5>
+                    <p>CEO FininceGlobal</p>
                   </div>
                 </div>
               </div>
-
 
               <div className='col-lg-12'>
                 <div className='testi-item'>
                   <div className='testi-comment'>
                     <p>
-                        <i className='fa fa-quote-left'/>
-                      I patronized Jessica and when He delivered, I honestly
-                      fell in love with the project. She is a very honest guy
-                      and she delivers ontime.
+                      <i className='fa fa-quote-left' />I patronized Jessica and
+                      when He delivered, I honestly fell in love with the
+                      project. She is a very honest guy and she delivers ontime.
                       <i className='fa fa-quote-right'></i>
                     </p>
                     <ul className='stars list-unstyled'>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                          <i className='fa fa-star-half-alt'></i>
-                        </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star-half-alt'></i>
+                      </li>
                     </ul>
                   </div>
                   <div className='client-info'>
-                      <img src='img/Testimonial/ehiz.jpg' alt='no internet connection'></img>
-                      <h5>Daisy Dominic</h5>
-                      <p>CEO FininceGlobal</p>
+                    <img
+                      src='img/Testimonial/ehiz.jpg'
+                      alt='no internet connection'
+                    ></img>
+                    <h5>Daisy Dominic</h5>
+                    <p>CEO FininceGlobal</p>
                   </div>
                 </div>
               </div>
-
 
               <div className='col-lg-12'>
                 <div className='testi-item'>
                   <div className='testi-comment'>
                     <p>
-                        <i className='fa fa-quote-left'/>
-                      I patronized Jessica and when He delivered, I honestly
-                      fell in love with the project. She is a very honest guy
-                      and she delivers ontime.
+                      <i className='fa fa-quote-left' />I patronized Jessica and
+                      when He delivered, I honestly fell in love with the
+                      project. She is a very honest guy and she delivers ontime.
                       <i className='fa fa-quote-right'></i>
                     </p>
                     <ul className='stars list-unstyled'>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'></i>
-                        </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
+                      <li>
+                        <i className='fa fa-star'></i>
+                      </li>
                     </ul>
                   </div>
                   <div className='client-info'>
-                      <img src='img/Testimonial/mike.png' alt='no internet connection'></img>
-                      <h5>Daisy Dominic</h5>
-                      <p>CEO FininceGlobal</p>
+                    <img
+                      src='img/Testimonial/mike.png'
+                      alt='no internet connection'
+                    ></img>
+                    <h5>Daisy Dominic</h5>
+                    <p>CEO FininceGlobal</p>
                   </div>
                 </div>
               </div>
-
             </OwlCarousel>
           </div>
         </div>
