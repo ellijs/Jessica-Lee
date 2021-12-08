@@ -6,10 +6,10 @@ import "./AboutMe.css";
 
 function AboutMe(props) {
     let fadeInScreenHandler = (screen) => {
-        if(screen.fadeScreen !== props.id) return;
+        if(screen.fadeInScreen !== props.id) return;
         Animations.animations.fadeInScreen(props.id)
     }
-    const fadeInSubscription = () => ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler)
+    const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler)
 
         const SCREEN_CONSTANTS = {
             description: "Full stack developer. Highly organized, fast learner and problem solver, embarking on software engineering career after 10 years in business management.",
@@ -40,7 +40,7 @@ function AboutMe(props) {
 
 
     return (
-        <div className='about-me-container screen-container' id={props.id || ""}>
+        <div className='about-me-container screen-container fade-in' id={props.id || ""}>
             <div className='about-me-parent'>
                 <ScreenHeading title={'About Me'} subHeading={'Why Choose Me?'} />
                 <div className='about-me-card'>

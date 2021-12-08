@@ -12,10 +12,10 @@ import './Testimonial.css';
 
 function Testimonial(props) {
   let fadeInScreenHandler = (screen) => {
-    if (screen.fadeScreen !== props.id) return;
+    if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
-  const fadeInSubscription = () =>
+  const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
     // Adding Own-carousel Animation moving from right to left in 1 sec. {...options}
@@ -47,7 +47,7 @@ function Testimonial(props) {
         title={"Testimonial"}
         subHeading={"What My People Say About Me"}
       />
-      <section className='testimonial-section' id={props.id || ""}>
+      <section className='testimonial-section fade-in' id={props.id || ""}>
         <div className='container'>
           <div className='row'>
             <OwlCarousel className='owl-carousel' id='testimonial-carousel' {...options} >
