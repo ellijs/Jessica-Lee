@@ -218,15 +218,15 @@ function Resume(props) {
       <div className='resume-screen-container' key='interests'>
         <ResumeHeading
           heading='Pilates'
-          description='Learn body balancing, patience and perserverance.'
+          description='Pilates has made me more patient and energenic. Whenever I practice difficult movements and positions, I learn how to overcome my limitaions. After working out, I feel a sense of accomplishment which affects me to have positive thinking and attitude.'
         />
         <ResumeHeading
           heading='Traveling'
-          description='Adventurous, Looking forward to meeting new people, cultures and delicious foods.'
+          description='Love traveling abroad because I can visit a lot of tourist attractions and enjoy amazing scenaries. Happy memories encourages me to work harder, and fulfil my happiness.'
         />
         <ResumeHeading
           heading='Hiking'
-          description='Feeling accomplished at the peak, getting rid of stress, feeling refreshed while sweating.'
+          description="Feeling accomplished at the peak, I can get rid of stress and refresh myself while sweating. Also, I think it's great to improve my concentration and patience."
         />
       </div>
   ];

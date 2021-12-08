@@ -88,7 +88,7 @@ function Testimonial(props) {
                       src='img/Testimonial/lady.png'
                       alt='no internet connection'
                     ></img>
-                    <h5>Daisy Dominic</h5>
+                    <h5>Maggie Dominic</h5>
                     <p>CEO FininceGlobal</p>
                   </div>
                 </div>
@@ -98,9 +98,7 @@ function Testimonial(props) {
                 <div className='testi-item'>
                   <div className='testi-comment'>
                     <p>
-                      <i className='fa fa-quote-left' />I patronized Jessica and
-                      when He delivered, I honestly fell in love with the
-                      project. She is a very honest guy and she delivers ontime.
+                      <i className='fa fa-quote-left' />She tried to listen to team members and figure out the best idea that they could agree with because she knows cooperation makes the best output.
                       <i className='fa fa-quote-right'></i>
                     </p>
                     <ul className='stars list-unstyled'>
@@ -136,9 +134,7 @@ function Testimonial(props) {
                 <div className='testi-item'>
                   <div className='testi-comment'>
                     <p>
-                      <i className='fa fa-quote-left' />I patronized Jessica and
-                      when He delivered, I honestly fell in love with the
-                      project. She is a very honest guy and she delivers ontime.
+                      <i className='fa fa-quote-left' />Highly organized, fast learner and problem solver, embarking on software engineering career after 10 years in business managements.
                       <i className='fa fa-quote-right'></i>
                     </p>
                     <ul className='stars list-unstyled'>
@@ -164,8 +160,8 @@ function Testimonial(props) {
                       src='img/Testimonial/daisy.jpg'
                       alt='no internet connection'
                     ></img>
-                    <h5>Daisy Dominic</h5>
-                    <p>CEO FininceGlobal</p>
+                    <h5>Daisy Steward</h5>
+                    <p>CEO of HappyDogs</p>
                   </div>
                 </div>
               </div>
@@ -174,9 +170,7 @@ function Testimonial(props) {
                 <div className='testi-item'>
                   <div className='testi-comment'>
                     <p>
-                      <i className='fa fa-quote-left' />I patronized Jessica and
-                      when He delivered, I honestly fell in love with the
-                      project. She is a very honest guy and she delivers ontime.
+                      <i className='fa fa-quote-left' />Jessica is open-minded, can fit harmoniously with new people, accept differences between cultures. She is "People person".
                       <i className='fa fa-quote-right'></i>
                     </p>
                     <ul className='stars list-unstyled'>
@@ -202,8 +196,8 @@ function Testimonial(props) {
                       src='img/Testimonial/ehiz.jpg'
                       alt='no internet connection'
                     ></img>
-                    <h5>Daisy Dominic</h5>
-                    <p>CEO FininceGlobal</p>
+                    <h5>Luke Lee</h5>
+                    <p>SWE at Betterment</p>
                   </div>
                 </div>
               </div>
@@ -212,9 +206,7 @@ function Testimonial(props) {
                 <div className='testi-item'>
                   <div className='testi-comment'>
                     <p>
-                      <i className='fa fa-quote-left' />I patronized Jessica and
-                      when He delivered, I honestly fell in love with the
-                      project. She is a very honest guy and she delivers ontime.
+                      <i className='fa fa-quote-left' />Jessica is reliable and responsible person because she always tries to put all her effort and do her best on the task she has to deal with.
                       <i className='fa fa-quote-right'></i>
                     </p>
                     <ul className='stars list-unstyled'>
@@ -240,8 +232,8 @@ function Testimonial(props) {
                       src='img/Testimonial/mike.png'
                       alt='no internet connection'
                     ></img>
-                    <h5>Daisy Dominic</h5>
-                    <p>CEO FininceGlobal</p>
+                    <h5>Ted Yoo</h5>
+                    <p>New SAANY corp.</p>
                   </div>
                 </div>
               </div>
