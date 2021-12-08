@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Typical from 'react-typical';
 
 import imgBack from '../../../src/images/mailz.jpeg';
@@ -16,6 +16,12 @@ function ContactMe(props) {
         Animations.animations.fadeInScreen(props.id)
     }
     const fadeInSubscription = () => ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler)
+
+    const [name, setName] = useState("")
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+    const [banner, setBanner] = useState("")
+    const [bool, setBool] = useState(false)
 
     return (
         <div className='main-container' id={props.id || ''}>
