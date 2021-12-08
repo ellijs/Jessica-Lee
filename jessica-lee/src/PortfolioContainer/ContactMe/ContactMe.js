@@ -57,6 +57,25 @@ function ContactMe(props) {
                             </a>
 
                 </div>
+                <div className='back-form'>
+                    <div className='img-back'>
+                        <h4>
+                            Send Your Email Here!
+                        </h4>
+                        <img src={imgBack} alt='image not found'/>
+                    </div>
+                    <form>
+                        <p>
+                            {banner}
+                        </p>
+                        <label htmlFor='name'>Name</label>
+                        <input type='text'></input>
+                        <label htmlFor='email'>Email</label>
+                        <input type='text'></input>
+                        <label htmlFor='message'>Message</label>
+                        <input type='text'></input>
+                    </form>
+                </div>
             </div>
             
         </div>
