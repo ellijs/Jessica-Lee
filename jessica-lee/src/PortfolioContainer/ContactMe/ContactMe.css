@@ -67,3 +67,22 @@ form p {
     font-family: "Poppins Bold";
 }
 
+form label {
+    margin-bottom: 5px;
+    color: #111;
+    letter-spacing: 0.2rem;
+  }
+  
+  form input,
+  textarea {
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+
