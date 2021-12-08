@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Typical from 'react-typical';
+import axios from 'axios';
+import {toast} from 'react-toastify';
 
 import imgBack from '../../../src/images/mailz.jpeg';
 import load1 from '../../../src/images/load2.gif';
@@ -33,6 +35,30 @@ function ContactMe(props) {
     const handleMessage = (e) => {
         setMessage(e.target.value)
     };
+
+    const submitForm = async (e) => {
+        e.preventDefault();
+        try {
+            let data = {
+                name,
+                email,
+                message
+            };
+            setBool(true)
+            const res = await axios.post(`/contact`, data)
+            if(name.length === 0 || email.length === 0 || message.length === 0) {
+                setBanner(res.data.msg)
+                toast.error(res.data.msg)
+                setBool(false)
+            } else if (res.status === 200) {
+                setBanner(res.data.msg)
+                toast.success(res.data.msg)
+                setBool(false)
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    }
 
     return (
         <div className='main-container' id={props.id || ''}>
@@ -75,7 +101,7 @@ function ContactMe(props) {
                         </h4>
                         <img src={imgBack} alt='image not found'/>
                     </div>
-                    <form>
+                    <form onSubmit={submitForm}>
                         <p>
                             {banner}
                         </p>
