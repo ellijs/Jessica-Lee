@@ -13,3 +13,29 @@
     background-color: #1f2235;
     box-shadow: 0 0px 20px -2px #1f2235;
 }
+
+.central-form h2 {
+    color: #fff;
+    font-family: "Poppins SemiBold";
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+}
+
+.back-form {
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.back-form .img-back {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.img-back h4 {
+    letter-spacing: 0.3rem;
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+    opacity: 0.5;
+}
+
