@@ -16,7 +16,11 @@ function ContactMe(props) {
     const fadeInSubscription = () => ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler)
 
     return (
-        <div>
+        <div className='main-container' id={props.id || ''}>
+            <ScreenHeading 
+            subHeading={"Let's Keep In Touch"}
+            title={'Contact Me'}
+            />
             
         </div>
     );
