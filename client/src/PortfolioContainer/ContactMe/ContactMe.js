@@ -3,8 +3,8 @@ import Typical from 'react-typical';
 import axios from 'axios';
 import {toast} from 'react-toastify';
 
-import imgBack from '../../../src/images/mailz.jpeg';
-import load1 from '../../../src/images/load2.gif';
+import imgBack from '../../images/mailz.jpeg';
+import load1 from '../../images/load2.gif';
 import ScreenHeading from '../../Utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../Utilities/ScrollService';
 import Animations from '../../Utilities/Animations';
