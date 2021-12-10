@@ -85,14 +85,7 @@ function Resume(props) {
       description:
         "Making webapp using React, increasing visuality using CSS and Semantic-ui, creating data using db.json and integrating front-end and the database.",
       subHeading: "Food shopping and delivery app for hungry coders",
-    },
-    // {
-    //   title: "Blog-app",
-    //   duration: { fromDate: "2021", toDate: "2021" },
-    //   description:
-    //     "Creating blog web-app by using React (front-end) and Ruby on rails (back-end), also User authentication that allows to manage user's CRUD.",
-    //   subHeading: "Writing your own blog and watching others! ",
-    // },
+    }
   ];
 
 
