@@ -7,6 +7,11 @@ import ScreenHeading from "../../Utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../Utilities/ScrollService";
 import Animations from "../../Utilities/Animations";
 import "./Testimonial.css";
+import lady from '../../../src/img/Testimonial/lady.png'
+import daisy from '../../../src/img/Testimonial/daisy.jpg'
+import man from '../../../src/img/Testimonial/man.png'
+import mike from '../../../src/img/Testimonial/mike.png'
+import ehiz from '../../../src/img/Testimonial/ehiz.jpg'
 
 // npm i react-owl-carousel
 
@@ -85,7 +90,7 @@ function Testimonial(props) {
                   </div>
                   <div className='client-info'>
                     <img
-                      src='img/Testimonial/lady.png'
+                      src={lady}
                       alt='no internet connection'
                     ></img>
                     <h5>Maggie Dominic</h5>
@@ -124,7 +129,7 @@ function Testimonial(props) {
                   </div>
                   <div className='client-info'>
                     <img
-                      src='img/Testimonial/man.png'
+                      src={man}
                       alt='no internet connection'
                     ></img>
                     <h5>Gary Lee</h5>
@@ -163,7 +168,7 @@ function Testimonial(props) {
                   </div>
                   <div className='client-info'>
                     <img
-                      src='img/Testimonial/daisy.jpg'
+                      src={daisy}
                       alt='no internet connection'
                     ></img>
                     <h5>Daisy Steward</h5>
@@ -202,7 +207,7 @@ function Testimonial(props) {
                   </div>
                   <div className='client-info'>
                     <img
-                      src='img/Testimonial/ehiz.jpg'
+                      src={ehiz}
                       alt='no internet connection'
                     ></img>
                     <h5>Luke Lee</h5>
@@ -241,7 +246,7 @@ function Testimonial(props) {
                   </div>
                   <div className='client-info'>
                     <img
-                      src='img/Testimonial/mike.png'
+                      src={mike}
                       alt='no internet connection'
                     ></img>
                     <h5>Ted Yoo</h5>
