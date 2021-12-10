@@ -53,10 +53,8 @@ function ContactMe(props) {
         setBanner(res.data.msg);
         toast.success(res.data.msg);
         setBool(false);
-        
-        setName("");
-        setEmail("");
-        setMessage("");
+
+        e.target.reset();
       }
     } catch (error) {
       console.log(error);
