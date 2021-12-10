@@ -56,9 +56,10 @@ function ContactMe(props) {
                 toast.success(res.data.msg)
                 setBool(false)
 
-                setName("")
-                setEmail("")
-                setMessage("")
+                setName("");
+                setEmail("");
+                setMessage("");
+
             }
         } catch (error) {
             console.log(error)
