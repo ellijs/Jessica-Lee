@@ -12,6 +12,8 @@ import daisy from '../../../src/img/Testimonial/daisy.jpg'
 import man from '../../../src/img/Testimonial/man.png'
 import mike from '../../../src/img/Testimonial/mike.png'
 import ehiz from '../../../src/img/Testimonial/ehiz.jpg'
+import shape from '../../../src/img/Testimonial/shape-bg.png'
+
 
 // npm i react-owl-carousel
 
@@ -257,7 +259,11 @@ function Testimonial(props) {
             </OwlCarousel>
           </div>
         </div>
-      </section>
+        </section>
+        <div className='footer-image'>
+            <img src={shape} alt='img not responding' />
+        </div>
+     
     </div>
   );
 }
